@@ -8,7 +8,17 @@ defineProps({
 const count = ref(0)
 </script>
 
-<template></template>
+<template>
+    <div class="container">
+        <div class="logo">
+            <img src="" alt="">
+
+        </div>
+        <div class="header-menu">
+
+        </div>
+    </div>
+</template>
 
 <style scoped>
 .read-the-docs {
