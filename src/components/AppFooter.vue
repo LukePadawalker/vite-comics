@@ -123,8 +123,18 @@ const count = ref(0)
 
   <div class="lower-footer">
     <div class="container">
-      <div class="sign-up-button"></div>
-      <div class="follow-us"></div>
+      <div class="sign-up-button">
+        <button>SIGN UP NOW!</button>
+      </div>
+      <div class="follow-us">
+        <p>FOLLOW US</p>
+        <img src="/src/assets/img/footer-facebook.png" alt="">
+        <img src="/src/assets/img/footer-twitter.png" alt="">
+        <img src="/src/assets/img/footer-youtube.png" alt="">
+        <img src="/src/assets/img/footer-pinterest.png" alt="">
+        <img src="/src/assets/img/footer-periscope.png" alt="">
+
+      </div>
 
     </div>
   </div>
@@ -133,8 +143,10 @@ const count = ref(0)
 <style lang="scss" scoped>
 .upper-footer {
   background-image: url("src/assets/img/footer-bg.jpg");
-  height: 300px;
+  height: 400px;
   width: 100%;
+  z-index: 0;
+  position: relative;
 
   .container {
     width: 75%;
@@ -154,21 +166,44 @@ const count = ref(0)
 
     img {
       width: 50%;
-      z-index: 0;
     }
   }
-
-
-
-
-
 }
-
-
 
 .lower-footer {
   height: 100px;
   width: 100%;
   background-color: rgb(68, 67, 67);
+  z-index: 1;
+  position: relative;
+
+  .container {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      border: 2px solid rgb(0, 123, 255);
+      background-color: transparent;
+      padding: 10px;
+      color: white;
+    }
+
+    .follow-us {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      p {
+        color: rgb(0, 132, 255);
+        font-weight: bold;
+      }
+    }
+  }
+
+
 }
 </style>

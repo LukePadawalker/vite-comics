@@ -1,5 +1,6 @@
 <script setup>
 import AppHeader from './components/AppHeader.vue'
+import AppBlueBar from './components/AppBlueBar.vue'
 import AppContent from './components/AppContent.vue'
 import AppFooter from './components/AppFooter.vue'
 </script>
@@ -7,6 +8,7 @@ import AppFooter from './components/AppFooter.vue'
 <template>
   <AppHeader />
   <AppContent />
+  <AppBlueBar />
   <AppFooter />
 </template>
 

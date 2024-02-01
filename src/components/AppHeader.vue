@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue'
 
+const array = 'data.js';
+
 const count = ref(0)
 </script>
 
@@ -9,9 +11,10 @@ const count = ref(0)
         <div class="container">
             <img src="/src/assets/img/dc-logo.png" alt="">
             <ul class="header-menu">
-                <li> <a href="">Characters</a></li>
-                <li> <a href="">Characters</a></li>
-                <li> <a href="">Characters</a></li>
+                <li v-for="voice in array">
+                    <a href="">{{ voice.text }}</a>
+
+                </li>
             </ul>
         </div>
     </div>
@@ -29,6 +32,14 @@ const count = ref(0)
 
     .header-menu {
         display: flex;
+        gap: 10px;
+
+        li {
+            a {
+                color: rgb(65, 63, 63)
+            }
+        }
+
     }
 
 }

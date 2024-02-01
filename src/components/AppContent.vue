@@ -5,14 +5,36 @@ const count = ref(0)
 </script>
 
 <template>
-    <p> --> Content goes here</p>
+    <div id="root">
+        <div class="container">
+            <p> --> Content goes here</p>
+
+        </div>
+
+    </div>
 </template>
 
 <style lang="scss" scoped>
-p {
-    height: 100px;
+#root {
     width: 100%;
-    background-color: gray;
-    color: white;
+    background-color: rgb(20, 20, 20);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+
+    .container {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            width: 100%;
+            color: white;
+        }
+    }
 }
 </style>
