@@ -1,7 +1,7 @@
 <script setup>
 import AppHeader from './components/AppHeader.vue'
 import AppContent from './components/AppContent.vue'
-import HelloWorld from './components/AppFooter.vue'
+import AppFooter from './components/AppFooter.vue'
 </script>
 
 <template>
@@ -16,6 +16,7 @@ import HelloWorld from './components/AppFooter.vue'
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 .logo {

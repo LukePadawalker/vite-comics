@@ -19,6 +19,7 @@ const count = ref(0)
 
 <style lang="scss" scoped>
 .container {
+    padding: 1rem;
     height: 100px;
     width: 75%;
     margin: 0 auto;
@@ -29,5 +30,6 @@ const count = ref(0)
     .header-menu {
         display: flex;
     }
+
 }
 </style>
