@@ -1,10 +1,12 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import AppHeader from './components/AppHeader.vue'
+import AppContent from './components/AppContent.vue'
 </script>
 
 <template>
   <AppHeader />
+  <AppContent />
 </template>
 
 <style lang="scss" scoped>
