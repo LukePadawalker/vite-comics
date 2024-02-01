@@ -10,18 +10,27 @@ const count = ref(0)
 
 <template>
     <div class="container">
-        <div class="logo">
-            <img src="" alt="">
+        <img src="/src/assets/img/dc-logo.png" alt="">
+        <ul class="header-menu">
+            <li> <a href="">Characters</a></li>
+            <li> <a href="">Characters</a></li>
+            <li> <a href="">Characters</a></li>
 
-        </div>
-        <div class="header-menu">
+        </ul>
 
-        </div>
     </div>
 </template>
 
-<style scoped>
-.read-the-docs {
-    color: #888;
+<style lang="scss" scoped>
+.container {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+
+    .header-menu {
+        display: flex;
+    }
 }
 </style>
