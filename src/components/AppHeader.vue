@@ -1,5 +1,6 @@
 <script setup>
 import headerVoices from '/src/assets/data/index.js';
+
 </script>
 
 <template>
