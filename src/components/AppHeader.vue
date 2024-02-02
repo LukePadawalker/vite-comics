@@ -1,8 +1,6 @@
 <script setup>
-import { ref } from 'vue'
-
-const array = 'data.js';
-
+import { ref } from 'vue';
+const data = './src/assets/data/index.js';
 const count = ref(0)
 </script>
 
@@ -11,7 +9,7 @@ const count = ref(0)
         <div class="container">
             <img src="/src/assets/img/dc-logo.png" alt="">
             <ul class="header-menu">
-                <li v-for="voice in array">
+                <li v-for="voice in data">
                     <a href="">{{ voice.text }}</a>
 
                 </li>

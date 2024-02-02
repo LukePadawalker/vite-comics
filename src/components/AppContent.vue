@@ -7,7 +7,7 @@ const count = ref(0)
 <template>
     <div id="root">
         <div class="container">
-            <p> --> Content goes here</p>
+            <div class="card"></div>
 
         </div>
 
