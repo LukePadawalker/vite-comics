@@ -1,7 +1,6 @@
 <script setup>
-import { ref } from 'vue';
-const data = './src/assets/data/index.js';
-const count = ref(0)
+import headerVoices from './src/assets/data/index.js';
+
 </script>
 
 <template>

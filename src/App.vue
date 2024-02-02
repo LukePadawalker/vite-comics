@@ -3,6 +3,14 @@ import AppHeader from './components/AppHeader.vue'
 import AppBlueBar from './components/AppBlueBar.vue'
 import AppContent from './components/AppContent.vue'
 import AppFooter from './components/AppFooter.vue'
+import { dcFilms, headerVoices } from './assets/data/index.js'
+
+export default {
+  data: () => ({
+    dcFilms,
+    headerVoices,
+  })
+};
 </script>
 
 <template>
