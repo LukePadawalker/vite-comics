@@ -1,5 +1,5 @@
 <script setup>
-import headerVoices from './src/assets/data/index.js';
+import headerVoices from '/src/assets/data/index.js';
 
 </script>
 
@@ -8,9 +8,8 @@ import headerVoices from './src/assets/data/index.js';
         <div class="container">
             <img src="/src/assets/img/dc-logo.png" alt="">
             <ul class="header-menu">
-                <li v-for="voice in data">
+                <li v-for="voice in headerVoices">
                     <a href="">{{ voice.text }}</a>
-
                 </li>
             </ul>
         </div>
