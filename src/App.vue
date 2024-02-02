@@ -1,5 +1,6 @@
 <script setup>
 import AppHeader from './components/AppHeader.vue'
+import AppJumbotron from './components/AppJumbotron.vue'
 import AppBlueBar from './components/AppBlueBar.vue'
 import AppContent from './components/AppContent.vue'
 import AppFooter from './components/AppFooter.vue'
@@ -8,6 +9,7 @@ import AppFooter from './components/AppFooter.vue'
 
 <template>
   <AppHeader />
+  <AppJumbotron />
   <AppContent />
   <AppBlueBar />
   <AppFooter />

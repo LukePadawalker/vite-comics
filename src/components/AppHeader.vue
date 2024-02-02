@@ -1,6 +1,5 @@
 <script setup>
-import headerVoices from '/src/assets/data/index.js';
-
+import headerVoices from '/src/assets/data/data.js';
 </script>
 
 <template>
@@ -29,13 +28,23 @@ import headerVoices from '/src/assets/data/index.js';
     .header-menu {
         display: flex;
         gap: 10px;
+        align-items: center;
 
-        li {
-            a {
-                color: rgb(65, 63, 63)
+        ul {
+            display: flex;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                a {
+                    color: rgb(65, 63, 63);
+                    font-size: 0.4rem;
+                    font-weight: bolder;
+                    text-transform: uppercase;
+                }
             }
         }
-
     }
 
 }
